@@ -55,7 +55,7 @@ Meteor.publish("tabular_getInfo", function(tableName, selector, sort, skip, limi
   var self = this;
 
   check(tableName, String);
-  check(selector, Match.Optional(Match.OneOf(Object, null)));
+  // check(selector, Match.Optional(Match.OneOf(Object, null)));
   check(sort, Match.Optional(Match.OneOf(Array, null)));
   check(skip, Number);
   check(limit, Number);
